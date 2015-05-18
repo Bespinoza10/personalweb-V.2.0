@@ -23,7 +23,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 45%;
 
     display: block;
 
@@ -34,26 +34,29 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: #000000;
     border: none;
     outline: none;
-    background: transparent;
+    background: none;
 }
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    color: #000;
     outline: none;
-    background: transparent;
+    background: none;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
 .slick-next:hover:before,
 .slick-next:focus:before
 {
-    opacity: 1;
+/*     opacity: 1; */
+cursor: pointer;
+
+
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
@@ -65,11 +68,11 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 40px;
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: #000000;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -77,8 +80,9 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 120px;
 }
+
 [dir='rtl'] .slick-prev
 {
     right: -25px;
@@ -95,7 +99,7 @@
 
 .slick-next
 {
-    right: -25px;
+    left: 1300px;
 }
 [dir='rtl'] .slick-next
 {
@@ -110,6 +114,29 @@
 {
     content: '←';
 }
+
+
+/* ARROW MEDIA QUIERIES */
+
+@media screen and (max-width:1000px){
+  .slick-prev{
+    left:30px;
+  }
+  .slick-next{
+    left:600px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .slick-prev{
+    left:0px;
+  }
+  .slick-next{
+    left:400px;
+  }
+}
+
+
 
 /* Dots */
 .slick-slider
@@ -130,6 +157,7 @@
     list-style: none;
 
     text-align: center;
+    background: #cfba65
 }
 .slick-dots li
 {
@@ -160,7 +188,7 @@
     color: transparent;
     border: 0;
     outline: none;
-    background: transparent;
+    background:#cfba65 ;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
@@ -170,12 +198,12 @@
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
 {
-    opacity: 1;
+/*     opacity: 9; */
 }
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 20px;
     line-height: 20px;
 
     position: absolute;

@@ -161,25 +161,79 @@
   }
 
 
+@media screen and (max-width:1000px){
+  .brandN
+  {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+    color:#000;
+  }
+  .small.elMenu{
+    width: 110px;
+    height: 110px;
+    display: inline-block;
+    margin-top: -20px;
+    background: none;
+
+  }
+  .navbar .nav .item {
+    display: none;
+  }
+  .navbar .logo{
+    width: 200px;
+    margin-top: 20px;
+  }
+  .scrolled.navbar .logo {
+    width: 200px;
+    margin-top: 20px;
+  }
+  .bioImg{
+    margin-top: 50px;
+  }
+  .sqrs{
+    margin-top: 20px;
+  }
+  .ez{
+    margin-top: 70px;
+  }
+
+
+
+}
+
+
+
 
 /* SLIDER */
 .sliderMain{
+  margin-top: -250px;
   width: 100%;
   height: 100%;
-  background-image: url('../img/eagleM.png');
+  background-image: url('../img/eagle.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
 
-@media only screen and (min-width: 500px){
-    .sliderMain{
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/eagle.png');
-    background-size: cover;
-    background-attachment: fixed;
+.maintxt{
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 50px;
+}
+
+.txtmain{
+  margin-top: 350px;
+}
+
+@media screen and (max-width:600px){
+    .maintxt{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 30px;
+  }
+    .txtmain{
+    margin-top: 250px;
   }
 }
+
+
 /******************** BIO ****************************/
 
 .bioIntro{
@@ -276,10 +330,11 @@
 }
 
 
+
 .hrs2{
   border: solid #000000;
   border-width: 5px 0 0;
-  width: 150px;
+  width: 200px;
   margin-top: 50px;
   margin-bottom: 150px;
 }
@@ -300,30 +355,145 @@
   border: 2px solid #000000;
 }
 
-    .offset{
+    .sqrsOffset{
       margin-right: 40px;
     }
 
+/* MY PORTFOLIO */
 
-.lol:hover{
-  background: #000;
+
+.portfolio{
+  margin-top: 300px;
+}
+
+.imgMargin{
+  margin-top: 100px;
+}
+
+.leoroofing{
+  margin-left: 70px;
+}
+
+@media screen and (max-width:1000px){
+  .leoroofing{
+    margin-left: 0px;
+  }
+}
+
+.imgs:hover{
+  border-bottom: solid 2px black;
+}
+
+
+/* testimonials */
+
+.testimonials{
+  background: #f1f1f1;
+  margin-top: 300px;
+}
+
+.testName{
+  margin-top: 150px;
+}
+.name4{
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
 }
 /* CONTACT FORM */
 
-.contactForm{
-  margin-top: 100px;
-  background-image: url('../img/background-contact1.png');
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .forma{
-  margin-top: 350px;
+  margin-top: 250px;
 }
 
 .contacth1{
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 40px;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 30px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width:600px){
+    .scrolled.navbar .logo h1.brandN,
+    .brandN
+    {
+    font-size: 20px;
+  }
+    .sliderMain{
+    margin-top: 0;
+    background-image: none;
+    height: 40%;
+  }
+    .maintxt{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 30px;
+  }
+    .txtmain{
+    margin-top: 250px;
+  }
+  .name{
+    font-size: 30px;
+  }
+  .name2{
+    font-size: 10px;
+  }
+  .ps{
+    font-size: 15px;
+  }
+
+  .bioImg{
+    margin-top: 50px;
+  }
+
+  .whtIoffer{
+    margin-top: 150px;
+  }
+
+  .hrs2{
+  border: solid #000000;
+  border-width: 5px 0 0;
+  width: 150px;
+
+  }
+
+  .sqrsOffset{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .sqrs{
+    margin-top: 20px;
+  }
+
+  .name4,
+  .name3{
+    text-align: center;
+  }
+
+  .leoroofing{
+    margin-left: 0px;
+  }
+  .ez{
+    margin-top: 70px;
+  }
+
+  .imgMargin{
+    margin-top: 70px;
+  }
+
+  .testName{
+    margin-top: -150px;
+  }
+  .slideP{
+    font-size: 12px;
+  }
+  .forma{
+    margin-top: 100px;
+  }
 }
 
 
