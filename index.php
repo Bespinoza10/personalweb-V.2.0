@@ -182,65 +182,34 @@
         </div>
       </div>
     </div>
-
-
-
 <!--     CONTACT FORM -->
-
-
-
-
-	 	 		<?php
-
-				 include('includes/mail_script.php');
-
-				 ?>
-
+  	 	 		<?php
+  				 include('includes/mail_script.php');
+  				 ?>
     <div class=" small-10 small-centered medium-10 medium-centered large-12 columns ">
-    	<div class="large-10 large-centered columns forma">
-
-
-    		<?php
-             echo"<h6 style='color:red;'>".$ERmsg."</h6>";
-            ?>
-
-
+      <div class="large-10 large-centered columns forma">
+      		<?php
+            echo"<h6 style='color:red;'>".$ERmsg."</h6>";
+          ?>
         <div class="section-container tabs large-10 large-centered columns" data-section>
           <section id="cont" class="section">
-            <div class="small-7 small-centered medium-4 medium-centered large-3 large-centered columns"><h2 class="contactH1"><a class="contacth1" href="#panel1" style="color:#cfba65;">Contact Me</a></h2></div>
+            <div class="small-7 small-centered medium-4 medium-centered large-3 large-centered columns"><h2 class="contactH1"><a class="contacth1" href="#panel1" style="color:#cfba65;">Contact Me</a></h2>
+            </div>
             <div class="content" data-slug="panel1">
-
-
-
-
               <form action="" method="post">
                 <div class="row collapse">
-
-
                   <div class="large-7 large-centered columns">
                     <input class="yourName" type="text" id="yourName" name="Name" placeholder="Your Name" value="<?php get_data("Name"); ?>" style="background: none;" >
-
-
                   </div>
-
                 </div>
                 <!-- START : EMAIL SECTION -->
                 <div class="row collapse">
-
-
-
                   <div class="large-7 large-centered columns">
                     <input type="text" id="yourEmail" name="Email" placeholder="Your Email (e.g. jane@smithco.com)" value="<?php get_data("Email"); ?>" style="background: none;">
                   </div>
-
                 </div>
-
-
                 <!-- START : PHONE SECTION -->
                 <div class="row collapse">
-
-
-
                   <div class="large-7 large-centered columns">
                     <input type="text" id="yourPhone" name="Phone" placeholder="Phone Number" value="<?php get_data("Phone"); ?>" style="background: none;">
                   </div>
@@ -249,23 +218,14 @@
                 <!-- START : COMMENTS SECTION -->
 
                 <div class="large-7 large-centered columns"><textarea rows="4" name="Comments" placeholder="Your Message" style="background: none;"><?php get_data("Comments"); ?></textarea>
-                <button style="background: #000; color: #cfba65; font-family: 'Julius Sans One', sans-serif;" type="submit" class="radius button">Submit</button></div>
-
+                  <button style="background: #000; color: #cfba65; font-family: 'Julius Sans One', sans-serif;" type="submit" class="radius button">Submit</button>
+                </div>
               </form>
-
-
             </div>
           </section>
-
-
-
-
+        </div>
       </div>
-  	</div>
-  </div>
-
-
-
+    </div>
   </body>
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="bower_components/foundation/js/foundation.js"></script>
